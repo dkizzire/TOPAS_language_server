@@ -1,6 +1,7 @@
 {
 	"name": "topas-language-server",
 	"description": "TOPAS Language Support",
+	"icon": "new_topas_icon.png",
 	"author": "Dayton Kizzire",
 	"license": "MIT",
 	"version": "1.0.0",
@@ -8,7 +9,7 @@
 		"type": "git",
 		"url": "https://github.com/dkizzire/TOPAS_language_server"
 	},
-	"publisher": "dkizzire",
+	"publisher": "dayton-kizzire",
 	"categories": [],
 	"keywords": [
 		"multi-root ready"
