@@ -1,0 +1,115 @@
+{
+	"name": "Topas Theme",
+	"type": "dark",
+	"colors": {
+	  "editor.background": "#1E1E1E",
+	  "editor.foreground": "#D4D4D4"
+	},
+	"tokenColors": [
+	  {
+		"scope": "comment",
+		"settings": {
+		  "foreground": "#6A9955"  
+		}
+	  },
+	  {
+		"scope": "string",
+		"settings": {
+		  "foreground": "#CE9178"
+		}
+	  },
+	  {
+		"scope": "string.interpolated.topas",
+		"settings": {
+		  "foreground": "#ff8800",
+		  "fontStyle": "bold"
+		}
+	  },
+	  {
+		"scope": "constant.numeric.topas",
+		"settings": {
+		  "foreground": "#F6CD75FF"  
+		}
+	  },
+	  {
+		"scope": "keyword.operator.arithmetic.topas",
+		"settings": {
+		  "foreground": "#FFFFFFFF"  
+		}
+	  },
+	  {
+		"scope": "keyword.control.topas",
+		"settings": {
+		  "foreground": "#6EBBFAFF"  
+		}
+	  },
+	  {
+		"scope": "keyword.parameter.topas",
+		"settings": {
+		  "foreground": "#C977FFFF"  
+		}
+	  },
+	  {
+		"scope": "keyword.output.topas",
+		"settings": {
+		  "foreground": "#6EBBFAFF"  
+		}
+	  },
+	  {
+		"scope": "keyword.function.topas",
+		"settings": {
+		  "foreground": "#00FF84FF"  
+		}
+	  },
+	  {
+		"scope": "keyword.declare.topas",
+		"settings": {
+		  "foreground": "#FF76EDFF"  
+		}
+	  },
+	  {
+		"scope": "meta.function.topas",
+		"settings": {
+		  "foreground": "#ffee04"  
+		}
+	  },
+	  {
+		"scope": "variable.other.topas",
+		"settings": {
+			"foreground": "#FF4E98FF"  
+		  }
+	  },
+	  {
+		"scope": "variable",
+		"settings": {
+		  "foreground": "#9CDCFE"  
+		}
+	  },
+	  {
+		"scope": "function",
+		"settings": {
+		  "foreground": "#DCDCAA"  
+		}
+	  }
+	],
+	"semanticTokenColors": {
+	  "variable": {
+		"foreground": "#9CDCFE"  
+	  },
+	  "function": {
+		"foreground": "#DCDCAA"  
+	  },
+	  "parameter": {
+		"foreground": "#4EC9B0" 
+	  },
+	  "keyword": {
+		"foreground": "#569CD6"  
+	  },
+	  "operator": {
+		"foreground": "#D4D4D4"  
+	  },
+	  "macro": {
+		"foreground": "#C586C0" 
+	  }
+	}
+}

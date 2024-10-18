@@ -1,0 +1,51 @@
+{
+	"name": "lsp-sample-multi-server-client-part",
+	"description": "VSCode part of a language server",
+	"author": "Microsoft Corporation",
+	"license": "MIT",
+	"version": "0.0.1",
+	"publisher": "vscode",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-extension-samples"
+	},
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"scripts": {},
+	"dependencies": {
+		"vscode-languageclient": "^7.0.0"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0"
+	},
+	"contributes": {
+  		"grammars": [
+			{
+			"language": "topas",
+			"scopeName": "source.topas",
+			"path": "./syntaxes/macro.tmLanguage.json"
+			}
+  		],
+  		"languages": [
+			{
+			"id": "topas",
+			"aliases": ["Topas", "topas"],
+			"extensions": [".inp", ".out", ".inc"],
+			"configuration": "./language-configuration.json"
+			}
+		],
+		"semanticTokenTypes": [
+		  { "id": "variable", "superType": "variable" },
+		  { "id": "function", "superType": "function" },
+		  { "id": "parameter", "superType": "parameter" },
+		  { "id": "keyword", "superType": "keyword" },
+		  { "id": "operator", "superType": "operator" },
+		  { "id": "macro", "superType": "macro" }
+		],
+		"semanticTokenModifiers": [
+		  { "id": "declaration" },
+		  { "id": "readonly" }
+		]
+	}
+}
