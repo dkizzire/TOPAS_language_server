@@ -5,7 +5,7 @@
 	"icon": "new_topas_icon.png",
 	"author": "Dayton Kizzire",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/dkizzire/TOPAS_language_server"
@@ -14,7 +14,7 @@
 	"categories": [],
 	"keywords": [
 		"multi-root ready",
-		"Topas", 
+		"Topas",
 		"TOPAS",
 		"Diffraction",
 		"Rietveld",
@@ -59,43 +59,73 @@
 		},
 		"grammars": [
 			{
-			"language": "topas",
-			"scopeName": "source.topas",
-			"path": "./syntaxes/macro.tmLanguage.json"
+				"language": "topas",
+				"scopeName": "source.topas",
+				"path": "./syntaxes/macro.tmLanguage.json"
 			}
-  		],
-  		"languages": [
+		],
+		"languages": [
 			{
-			"id": "topas",
-			"aliases": ["Topas", "topas"],
-			"extensions": [".inp", ".out", ".inc", ".str"],
-			"configuration": "./language-configuration.json"
+				"id": "topas",
+				"aliases": [
+					"Topas",
+					"topas"
+				],
+				"extensions": [
+					".inp",
+					".out",
+					".inc",
+					".str"
+				],
+				"configuration": "./language-configuration.json"
 			}
 		],
 		"semanticTokenTypes": [
-			{ "id": "variable", "superType": "variable" },
-			{ "id": "function", "superType": "function" },
-			{ "id": "parameter", "superType": "parameter" },
-			{ "id": "keyword", "superType": "keyword" },
-			{ "id": "operator", "superType": "operator" },
-			{ "id": "macro", "superType": "macro" }
-		  ],
-		  "semanticTokenModifiers": [
-			{ "id": "declaration" },
-			{ "id": "readonly" }
-		  ],
-		  "themes": [
 			{
-			  "label": "Topas Dark Theme",
-			  "uiTheme": "vs-dark",
-			  "path": "./themes/topas-dark-theme.json"
+				"id": "variable",
+				"superType": "variable"
 			},
 			{
-			  "label": "Topas Light Theme",
-			  "uiTheme": "vs",
-			  "path": "./themes/topas-light-theme.json"
+				"id": "function",
+				"superType": "function"
+			},
+			{
+				"id": "parameter",
+				"superType": "parameter"
+			},
+			{
+				"id": "keyword",
+				"superType": "keyword"
+			},
+			{
+				"id": "operator",
+				"superType": "operator"
+			},
+			{
+				"id": "macro",
+				"superType": "macro"
 			}
-		  ]
+		],
+		"semanticTokenModifiers": [
+			{
+				"id": "declaration"
+			},
+			{
+				"id": "readonly"
+			}
+		],
+		"themes": [
+			{
+				"label": "Topas Dark Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/topas-dark-theme.json"
+			},
+			{
+				"label": "Topas Light Theme",
+				"uiTheme": "vs",
+				"path": "./themes/topas-light-theme.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
