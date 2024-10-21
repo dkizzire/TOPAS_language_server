@@ -83,7 +83,7 @@ function activate(context) {
                 diagnosticCollectionName: 'topas-language-server',
                 workspaceFolder: folder,
                 outputChannel: outputChannel,
-                initializationOptions: {} // Removed 'capabilities'
+                initializationOptions: {}
             };
             const client = new node_1.LanguageClient('topas-language-server', 'Topas Language Server', serverOptions, clientOptions);
             client.start();

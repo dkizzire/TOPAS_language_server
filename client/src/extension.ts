@@ -98,7 +98,7 @@ export function activate(context: ExtensionContext) {
         diagnosticCollectionName: 'topas-language-server',
         workspaceFolder: folder,
         outputChannel: outputChannel,
-        initializationOptions: {}  // Removed 'capabilities'
+        initializationOptions: {}  
       };
       const client = new LanguageClient('topas-language-server', 'Topas Language Server', serverOptions, clientOptions);
       client.start();
