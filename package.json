@@ -1,6 +1,6 @@
 {
 	"name": "topas-language-server",
-	"displayName": "TOPAS Language Support",
+	"displayName": "TOPAS Diffraction Language Support",
 	"description": "TOPAS Language Support",
 	"icon": "new_topas_icon.png",
 	"author": "Dayton Kizzire",
@@ -78,52 +78,6 @@
 					".str"
 				],
 				"configuration": "./language-configuration.json"
-			}
-		],
-		"semanticTokenTypes": [
-			{
-				"id": "variable",
-				"superType": "variable"
-			},
-			{
-				"id": "function",
-				"superType": "function"
-			},
-			{
-				"id": "parameter",
-				"superType": "parameter"
-			},
-			{
-				"id": "keyword",
-				"superType": "keyword"
-			},
-			{
-				"id": "operator",
-				"superType": "operator"
-			},
-			{
-				"id": "macro",
-				"superType": "macro"
-			}
-		],
-		"semanticTokenModifiers": [
-			{
-				"id": "declaration"
-			},
-			{
-				"id": "readonly"
-			}
-		],
-		"themes": [
-			{
-				"label": "Topas Dark Theme",
-				"uiTheme": "vs-dark",
-				"path": "./themes/topas-dark-theme.json"
-			},
-			{
-				"label": "Topas Light Theme",
-				"uiTheme": "vs",
-				"path": "./themes/topas-light-theme.json"
 			}
 		]
 	},

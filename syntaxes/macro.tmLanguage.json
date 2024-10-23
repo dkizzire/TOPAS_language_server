@@ -3,7 +3,8 @@
     "fileTypes": [
         "inp",
         "out",
-        "inc"
+        "inc",
+        "str"
     ],
     "patterns": [
         {
@@ -100,7 +101,7 @@
             "match": "#\\b(define|delete_macros|else|elseif|endif|if|ifdef|ifndef|include|m_argu|m_code|m_code_refine|m_else|m_elseif|m_endif|m_eqn|m_first_word|m_if|m_ifarg|m_one_word|m_out|m_unique|m_unique_not_refine|out|undef)\\b"
         },
         "localMacro": {
-            "name": "meta.function.topas",
+            "name": "keyword.declare.topas",
             "match": "\\b(macro)\\s+(\\w+)\\b"
         },
         "INCmacro":{

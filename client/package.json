@@ -35,18 +35,6 @@
 			"extensions": [".inp", ".out", ".inc", ".str"],
 			"configuration": "./language-configuration.json"
 			}
-		],
-		"semanticTokenTypes": [
-		  { "id": "variable", "superType": "variable" },
-		  { "id": "function", "superType": "function" },
-		  { "id": "parameter", "superType": "parameter" },
-		  { "id": "keyword", "superType": "keyword" },
-		  { "id": "operator", "superType": "operator" },
-		  { "id": "macro", "superType": "macro" }
-		],
-		"semanticTokenModifiers": [
-		  { "id": "declaration" },
-		  { "id": "readonly" }
 		]
 	}
 }
